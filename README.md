@@ -1,37 +1,41 @@
-# S.TableTap
+# TableTap — Open Source Restaurant Waitlist & Host Stand
 
-**Simple name:** TableTap
+**TableTap** is an open-source **restaurant waitlist app**. Guests join the queue from their phone, see live position, and get pinged when the table is ready. Hosts run the floor from a night-mode stand.
 
-Restaurant waitlist and host floor.
+[![License: MIT](https://img.shields.io/badge/License-MIT-violet.svg)](LICENSE)
 
-This is a Grok App Builder project. The sandbox npm name was `app-builder-workspace`. On GitHub it is **S.TableTap** (private).
+## Features
 
-## Run on this Mac
+- Remote **join waitlist** (no host iPad required for the guest)
+- Live queue updates
+- Host floor / stand view
+- Signup + login for venues
+- Built as a phone-first PWA
 
-Need **Node.js 22** and **npm**. Postgres is not required (uses PGLite in the browser/process).
+## Who it is for
+
+- Cafes, QSR, and restaurants that still shout names
+- Builders of **restaurant OS**, **table management**, or **guest paging**
+
+## Quick start
 
 ```bash
-cd "/Users/akshitpareta/Documents/S-projects/S.TableTap"
+git clone https://github.com/Akshit1018/S.TableTap.git
+cd S.TableTap
 npm install
-npm run dev
-```
-
-Open http://127.0.0.1:8080
-
-To skip Grok login in local preview:
-
-```bash
 VITE_AUTH_ENABLED=false npm run dev
 ```
 
-Optional AI (only if this app calls Grok): set `XAI_API_KEY`.
+Open [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-## Scripts
+## Tech stack
 
-- `npm run dev` — Vite on port 8080
-- `npm run build` — production build + DB migrate (skipped without DATABASE_URL)
-- `npm run typecheck`
+React 19 · TanStack Start · Vite · Tailwind · PGLite · better-auth
 
-## Notes
+## License
 
-Do not commit `.env`, `node_modules`, or `.grok/`.
+[MIT](LICENSE)
+
+## Keywords
+
+restaurant waitlist, table ready notification, host stand software, open source restaurant queue, guest paging, QSR waitlist app
